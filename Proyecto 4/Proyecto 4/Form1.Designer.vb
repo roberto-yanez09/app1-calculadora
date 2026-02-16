@@ -45,6 +45,9 @@ Partial Class Uno
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button0 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -78,10 +81,10 @@ Partial Class Uno
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(325, 58)
+        Me.TextBox1.Location = New System.Drawing.Point(252, 60)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(238, 24)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 24)
         Me.TextBox1.TabIndex = 3
         Me.TextBox1.Text = "0"
         '
@@ -98,10 +101,10 @@ Partial Class Uno
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(325, 144)
+        Me.TextBox2.Location = New System.Drawing.Point(252, 141)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(238, 24)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 24)
         Me.TextBox2.TabIndex = 5
         Me.TextBox2.Text = "0"
         '
@@ -292,12 +295,46 @@ Partial Class Uno
         Me.Button10.Text = "CE"
         Me.Button10.UseVisualStyleBackColor = True
         '
+        'Button11
+        '
+        Me.Button11.Font = New System.Drawing.Font("SuperFrench", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.Button11.Location = New System.Drawing.Point(633, 330)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(80, 81)
+        Me.Button11.TabIndex = 23
+        Me.Button11.Text = "."
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(475, 64)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(14, 13)
+        Me.RadioButton1.TabIndex = 24
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(475, 145)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(14, 13)
+        Me.RadioButton2.TabIndex = 25
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Uno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CadetBlue
         Me.ClientSize = New System.Drawing.Size(1334, 799)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button0)
         Me.Controls.Add(Me.Button3)
@@ -324,7 +361,7 @@ Partial Class Uno
         Me.Font = New System.Drawing.Font("SuperFrench", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
         Me.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.Name = "Uno"
-        Me.Text = "1"
+        Me.Text = "."
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -353,4 +390,7 @@ Partial Class Uno
     Friend WithEvents Button3 As Button
     Friend WithEvents Button0 As Button
     Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
 End Class
