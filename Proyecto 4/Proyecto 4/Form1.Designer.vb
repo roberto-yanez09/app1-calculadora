@@ -81,6 +81,7 @@ Partial Class Uno
         '
         'TextBox1
         '
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(252, 60)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.TextBox1.Name = "TextBox1"
@@ -101,6 +102,7 @@ Partial Class Uno
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(252, 141)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.TextBox2.Name = "TextBox2"

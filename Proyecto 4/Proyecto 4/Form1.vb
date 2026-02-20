@@ -24,10 +24,14 @@
     End Sub
 
     Private Sub División_Click(sender As Object, e As EventArgs) Handles División.Click
+        Dim resultado
         Dim Numero1 As Double = Double.Parse(TextBox1.Text)
         Dim Numero2 As Double = Double.Parse(TextBox2.Text)
-
-        Dim resultado As Double = Numero1 / Numero2
+        If Numero2 > 0 Then
+            resultado = Numero1 / Numero2
+        Else
+            resultado = "No se puede"
+        End If
         Label6.Text = resultado.ToString()
     End Sub
 
